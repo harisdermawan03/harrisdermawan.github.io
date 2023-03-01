@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #000;
+    background-image: url('v.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #2be280;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #2be280;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+
+}
+
+.dropdown_menu li {
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+}
+  /* body */
+  .code__body{
+      display: inline-block;
+      width: 100%;
+      padding: 0 8.5%;
+  }
+  .code__body__product{
+      display: inline-block;
+      width: 100%;
+  }
+  .code__body__product__title{
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .code__body__product__title h1{
+      font-family: 'Yatra One', cursive;
+      display: inline-block;
+      background-color: #511e78;
+      padding: 5px 10px;
+      color: white;
+      box-shadow: 0px 2px 18px #511e78;
+      transform: rotate(-3deg);
+  }
+  .code__about{
+      display: inline-block;
+      width: 100%;
+      margin-top: 100px;
+  }
+  .code__card__profile{
+      display: inline-block;
+      width: 100%;
+      background-color: white;
+      border-radius: 5px;
+  }
+  .code__card__head__data{
+      display: inline-block;
+      width: 100%;
+      padding: 5px 10px;
+      padding-top: 13px;
+  }
+  .code__card__head__data ul{
+      padding: 0;
+      list-style: none;
+      margin: 0;
+  }
+  .code__card__head__data ul li{
+      display: inline-block;
+  }
+  .code__card__head__data ul li:nth-child(1) a{
+      display: inline-block;
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #511e78;
+  }
+  .code__card__head__data ul li:nth-child(1) a img{
+      width: 100%;
+      height: 100%;
+  }
+  .code__card__head__data ul li:nth-child(2) a,.code__card__head__data ul li:nth-child(2) a:hover{
+      display: inline-block;
+      vertical-align: bottom;
+      padding-left: 5px;
+      text-decoration: none;
+      color: black;
+      font-weight: 900;
+  }
+  .code__card__head__data ul li:nth-child(2) p{
+      margin: 0;
+      padding-left: 5px;
+  }
+  .code__card__body__image img{
+      width: 100%;
+      height: 100%;
+  }
+  .code__about__decription{
+      display: inline-block;
+      padding: 4% 13%;
+  }
+  .code__about__decription__tittle h1{
+      display: inline-block;
+      max-width: 250px;
+      font-family: 'Yatra One', cursive;
+      color: #511e78;
+  }
+  .code__about__decription p{
+      font-weight: 600;
+      color: #464545;
+  }
+  .code__card__footer__descripsi{
+      display: inline-block;
+      padding: 7px 10px;
+  }
+  .code__card__footer__descripsi p{
+      margin: 0;
+  }
+  .code--mod--padding{
+      padding: 11px;
+  }
+  .code__benner__paralax__image{
+      background-image: url('../images/bg-paralax.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+  }
+  .code__benner{
+      display: inline-block;
+      width: 100%;
+      margin: 5% 0;
+  }
+  .code__benner__paralax{
+      position: relative;
+      height: 350px;
+      width: 100%;
+      overflow: hidden;
+  }
+  .code__benner__title{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1;
+      text-align: center;
+  }
+  .code__benner__title h1{
+      font-size: 50px;
+      color: white;
+      font-family: 'Yatra One', cursive;
+      background-color: #511e78;
+      padding: 5px 10px;
+  }
+  .code__benner__title p{
+      color: white;
+      font-family: 'Yatra One', cursive;
+      background-color: #511e78;
+      padding: 5px 10px;
+      width: 340px;
+      margin: 0 auto;
+  }

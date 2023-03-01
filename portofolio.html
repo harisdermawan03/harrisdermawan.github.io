@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/portofolio.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Haris Darmawan</a></div>
+        <div class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skil.html">Skill</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/haris.dermawan_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/HariisDermawaan"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/harisdermawan03"><i class="fa fa-github"></i></a>
+        </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skil.html">Skill</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1F8AEgUivkuoyemhQ-vRYzFFxCvH9I14j/view?usp=share_link" class="action_btn">Download Cv</a></li>
+      </div>
+    </header>
+    <!--Akhir-->
+
+     <section id="projeck">
+      <div class="projeck-heading">
+        <h3>Portofolio</h3>
+      </div>
+     </section>
+
+     <div class="blog-container">
+      <div class="blog-box">
+        <div class="blog-img">
+          <img src="cv.png" alt="blog">
+        </div>
+        <div class="blog-text">
+          <span> 11 Desember 2022 </span>
+          <a href="#" class="blog-title">Boostrap 5, CSS, JavaScript</a>
+          <p>Website Personal </p>
+          <a href="https://harisdermawan03.github.io/harisdarmawan.github.io/">Lihat</a>
+         </div>
+      </div>
+      <div class="blog-box">
+        <div class="blog-img">
+          <img src="bs.png" alt="blog">
+        </div>
+        <div class="blog-text">
+          <span> 25 Febuari 2023</span>
+          <a href="#" class="blog-title">HTML CSS JavaScript</a>
+          <p>Website Personal </p>
+          <a href="index.html">Lihat</a>
+         </div>
+      </div>
+      <div class="blog-box">
+        <div class="blog-img">
+          <img src="bnn.png" alt="blog">
+        </div>
+        <div class="blog-text">
+          <span> 10 Januari 2023</span>
+          <a href="#" class="blog-title">Boostrep 5, CSS JavaScript</a>
+          <p>Website Personal</p>
+          <a href="">Lihat</a>
+         </div>
+      </div>
+
+     </div>
+
+     
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+         dropdownMenu.classList.toggle('open')
+         const isOpen = dropdownMenu.classList.contains('open')
+
+         toggleBtnIcon.classList = isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

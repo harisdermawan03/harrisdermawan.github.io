@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #000;
+    background-image: url('v.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+a:hover{
+    color: #2be280;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: #2be280;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+
+}
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+
+}
+.action_btn:active{
+    scale: 0.95;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+
+}
+.dropdown_menu li{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+}
+* {
+    box-sizing: border-box;
+    font-family: -apple-system "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-card {
+    width: 350px;
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .card-header {
+    background: #2c3a47;
+    padding: 30px 10px;
+  }
+  .pic {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #2be280, #ef4747);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+  }
+  .pic img {
+    width: 100px;
+    display: block;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name {
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .desc {
+    font-size: 18px;
+    color: #2be280;
+  }
+  .social {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .social a {
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: 0.3s linear;
+  }
+  .social a:hover {
+    color: #2be280;
+  }
+  .contact {
+    display: inline-block;
+    padding: 12px 50px;
+    color: #2be280;
+    border: 2px solid #2be280;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact:hover {
+    background-color: #2be280;
+    /* border: 1px solid #fff; */
+    color: #fff;
+  }
+  .card-footer {
+    background-color: #f2f2f2;
+    padding: 30px 10px;
+  }
+  .numbers {
+    display: flex;
+    align-items: center;
+  }
+  .numbers .item {
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #2be280;
+  }
+  .numbers .item span {
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+  }
+  @keyframes animated-gradient {
+    25% {
+      background-position: left bottom;
+    }
+    50% {
+      background-position: right bottom;
+    }
+    75% {
+      background-position: right top;
+    }
+    100% {
+      background-position: left top;
+    }
+  }

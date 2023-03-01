@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ini.css">
+    <title>About</title>
+</head>
+<body>
+     <!--Navbar-->
+     <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Haris Darmawan</a></div>
+        <div class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skil.html">Skill</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/haris.dermawan_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/HariisDermawaan"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/harisdermawan03"><i class="fa fa-github"></i></a>
+        </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skil.html">Skill</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1F8AEgUivkuoyemhQ-vRYzFFxCvH9I14j/view?usp=share_link" class="action_btn">Download Cv</a></li>
+      </div>
+    </header>
+    <!--Akhir-->
+     
+    <!-- home about -->
+    <div class="code__body">
+
+      <div class="code__about">
+        
+        <div class="col-md-4">
+          
+          <div class="code__card__profile">
+            
+            <div class="code__card__head">
+              
+              <div class="code__card__head__data">
+                
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="x.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">Haris Dermawan</a>
+                    <p>Junior Web Development</p>
+                  </li>
+                </ul>
+  
+              </div>
+  
+            </div>
+  
+            <div class="code__card__body">
+              <div class="code__card__body__image">
+                <img src="me.jpg"alt="">
+              </div>
+            </div>
+  
+            <div class="code__card__footer">
+              <div class="code__card__footer__descripsi">
+                <p>
+                  Hai, perkenalkan nama saya Haris Darmawan, atau biasa dipanggil Haris. Saya merupakan seorang junior Web Development yang memiliki ketertarikan di dunia Digital Marketing dan Web Development.
+                  Saat ini saya sedang kuliah di Universitas Pamulang, Mengambil Prodi Teknik Informatika S1.
+                  Keseharian saya adalah belajar beberpa bahasa pemogramman seperti PHP, CSS DLL, 
+                  Saya senang berkerja dengan teknologi terbaru dan selalu ingin belajar lebih banyak untuk meningkatkan kompetesi saya,
+                  saya juga senang membahas topik mengenai internet, komputer, dan pembahasan menarik lainnya yang berhubungan dengan teknologi.
+                </p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+        <div class="col-md-8">
+          
+          <div class="code__about__decription">
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+    <!--Akhir-->
+      
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+         dropdownMenu.classList.toggle('open')
+         const isOpen = dropdownMenu.classList.contains('open')
+
+         toggleBtnIcon.classList = isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
