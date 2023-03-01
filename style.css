@@ -139,7 +139,7 @@ section#hero{
 }
 #hero h1{
     font-size: 3rem;
-    margin-bottom: 9rem;
+    margin-bottom: 16rem;
 }
 @media(max-width: 992px){
     .navbar .links,
