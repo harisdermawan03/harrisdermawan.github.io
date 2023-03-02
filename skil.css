@@ -20,6 +20,8 @@ a {
     text-decoration: none;
     color: aliceblue;
     font-size: 1rem;
+    float: left;
+    padding-right: 5px;
 }
 
 a:hover {
@@ -97,61 +99,6 @@ header {
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-:root{
-    --background-color:#222;
-    /* yellow : rgb(255,255,0) */
-
-}
-.progressbar-container{
-    --primary-color:150, 150,150 ;
-    padding-top: 10rem; /* Its not Necessary*/
-    width:300px;
-
-    margin:0 auto;
-
-}
-
-.progressbar-container >div { 
-    position: relative;
-}
-
-.progressbar-container .skill-title{
-    color:#FFF;
-    margin-bottom: 1rem;
-}
-
-.progressbar-container .skill-quantity{
-    color:rgb(var(--primary-color));
-    position:absolute;
-    right:0px;
-    top:0;
-}
-
-.progressbar-container .skill-box{
-    margin:1.25rem 0;
-    width:100%;
-    height:15px;
-    background-color: var(--background-color);
-
-}
-
-.progressbar-container .volume{
-    height: 100%;
-    background:rgb(var(--primary-color));
-    padding-left:  5px;
-    color:#ddf;
-}
-
-.progressbar-container .skill-quantity::after{
-    content: '';
-    width:1px;
-    height:30px;
-    top:100%;
-    right:50%;
-    position: absolute;
-    background-color: rgb(var(--primary-color));
-}
-
 .dropdown_menu.open {
     height: 240px;
 
@@ -185,6 +132,7 @@ section#hero {
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: #2be280;
 }
 
 @media(max-width: 992px) {
@@ -211,3 +159,224 @@ section#hero {
     }
 
 }
+  .skillBox {
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .skillBar {
+    width: 85%;
+    height: 35px;
+    margin: 2px auto; }
+  
+  .skillArea {
+    width: 90%;
+    margin-left: 10px;
+    position: relative;
+    left: 11px;
+    top: 7px; }
+  
+
+  
+  .skill-HTML {
+    width: 95%;
+    height: 2px;
+    -webkit-animation: Animate-HTML 3s;
+            animation: Animate-HTML 3s;
+    background-color: #2be280;
+    position: relative;
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  
+  .skill-CSS {
+    width: 85%;
+    height: 2px;
+    -webkit-animation: Animate-CSS 3s;
+            animation: Animate-CSS 3s;
+    background-color: #2be280;
+    position: relative;
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  
+  .skill-JS {
+    width: 80%;
+    height: 2px;
+    -webkit-animation: Animate-JS 3s;
+            animation: Animate-JS 3s;
+    background-color: #2be280;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left; }
+  
+  .skill-A4 {
+    width: 50%;
+    height: 2px;
+    -webkit-animation: Animate-A4 3s;
+            animation: Animate-A4 3s;
+    background-color: #2be280;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left; }
+  
+  .skill-NODEJS {
+    width: 70%;
+    height: 2px;
+    -webkit-animation: Animate-NODEJS 3s;
+            animation: Animate-NODEJS 3s;
+    background-color: #2be280;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left; }
+  
+  .skill-WP {
+    width: 90%;
+    height: 2px;
+    -webkit-animation: Animate-WP 3s;
+            animation: Animate-WP 3s;
+    background-color: #2be280;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left; }
+  
+  @-webkit-keyframes Animate-HTML {
+    from {
+      width: 0; }
+    to {
+      width: 95%; } }
+  
+  @keyframes Animate-HTML {
+    from {
+      width: 0; }
+    to {
+      width: 95%; } }
+  
+  @-webkit-keyframes Animate-CSS {
+    from {
+      width: 0; }
+    to {
+      width: 85%; } }
+  
+  @keyframes Animate-CSS {
+    from {
+      width: 0; }
+    to {
+      width: 85%; } }
+  
+  @-webkit-keyframes Animate-JS {
+    from {
+      width: 0; }
+    to {
+      width: 80%; } }
+  
+  @keyframes Animate-JS {
+    from {
+      width: 0; }
+    to {
+      width: 80%; } }
+  
+  @-webkit-keyframes Animate-A4 {
+    from {
+      width: 0; }
+    to {
+      width: 50%; } }
+  
+  @keyframes Animate-A4 {
+    from {
+      width: 0; }
+    to {
+      width: 50%; } }
+  
+  @-webkit-keyframes Animate-NODEJS {
+    from {
+      width: 0; }
+    to {
+      width: 70%; } }
+  
+  @keyframes Animate-NODEJS {
+    from {
+      width: 0; }
+    to {
+      width: 70%; } }
+  
+  @-webkit-keyframes Animate-WP {
+    from {
+      width: 0; }
+    to {
+      width: 90%; } }
+  
+  @keyframes Animate-WP {
+    from {
+      width: 0; }
+    to {
+      width: 90%; } }
+  
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width: 480px) {
+    .ion-social-html5-outline {
+      font-size: 310%; }
+    .ion-social-css3-outline {
+      font-size: 310%; }
+    .ion-social-html5-outline {
+      font-size: 300%; }
+    .ion-social-javascript {
+      font-size: 300%; }
+    .ion-social-angular-outline {
+      font-size: 300%; }
+    .ion-social-nodejs {
+      font-size: 300%; }
+    .ion-social-wordpress-outline {
+      font-size: 310%; }
+    .skillBar {
+      width: 80%;
+      height: 35px;
+      margin: 10px auto; }
+    .skillArea {
+      margin-left: 10px;
+      position: relative;
+      left: 35px;
+      top: 10px;
+      padding: 5px; }
+    .skillName {
+      font-size: 22px;
+      margin: 35px;
+      position: relative;
+      top: 10px; } }
+  
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
+    .skillBar {
+      width: 75%;
+      margin: 10px auto; }
+    .skillArea {
+      position: relative;
+      left: 35px;
+      top: 10px;
+      padding: 5px; }
+    .skillName {
+      font-size: 22px;
+      margin: 35px;
+      position: relative;
+      top: 10px; } }
+  
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width: 992px) {
+    .skillBar {
+      width: 70%; } }
+  
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width: 1200px) {
+    .skillBar {
+      width: 65%; } }
+  
