@@ -5,9 +5,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background-color: #000;
-    background-image: url('v.jpg');
-    background-repeat: no-repeat;
+  background-color: #000;
+  background-image: url('mn.jpg');
+  background-size: cover;
+  background-position: center;
 }
 li{
     list-style: none;
@@ -138,7 +139,7 @@ section#hero{
     overflow: hidden;
   }
   .card-header {
-    background: #2c3a47;
+    
     padding: 30px 10px;
   }
   .pic {
@@ -194,7 +195,7 @@ section#hero{
     color: #fff;
   }
   .card-footer {
-    background-color: #f2f2f2;
+    
     padding: 30px 10px;
   }
   .numbers {
@@ -209,7 +210,7 @@ section#hero{
   }
   .numbers .item span {
     display: block;
-    color: #2c3a47;
+    color: #f9f9f9;
     font-size: 30px;
   }
   @keyframes animated-gradient {
